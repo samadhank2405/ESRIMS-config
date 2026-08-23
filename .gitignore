@@ -1,0 +1,7 @@
+# This repository is consumed by Spring Cloud Config.
+# Keep only versioned configuration files at its root.
+*
+!.gitignore
+!README.md
+!*.yml
+!*.yaml
