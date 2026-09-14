@@ -3,10 +3,14 @@ server:
 
 spring:
   datasource:
-    url: ${PAYMENT_DB_URL}
-    username: ${PAYMENT_DB_USERNAME}
-    password: ${PAYMENT_DB_PASSWORD}
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3307/payment_db
+    username: root
+    password: Kadam@1999
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
 eureka:
   client:
